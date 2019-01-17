@@ -1,2 +1,0 @@
-This folder is used for files that are downloaded from the application,
-while testing "download" functions
