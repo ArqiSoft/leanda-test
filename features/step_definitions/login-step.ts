@@ -50,7 +50,7 @@ When(/login as a test user/, { timeout: 60 * 1000 }, (callback: CallbackStepDefi
                 () => {
                     expect(browser.getCurrentUrl()).to.eventually.includes('auth/realms/OSDR').then(
                         () => {
-                            loginPage.inputUserNamePassword('testlogin', '1234').then(
+                            loginPage.inputUserNamePassword('tester', 'tester').then(
                                 () => {
                                     browser.sleep(5 * 1000).then(() => {
                                         browser.waitForAngularEnabled(true).then(
