@@ -29,7 +29,7 @@ Scenario: As a user I want to interact with panel and notifications
     And I close notification panel
 
 # Scenario: As a user I want to stop and restart file upload from notification panel
-#     When I want to upload file from '../../../Data/PDF/IIM_2016053115330515.pdf' 'IIM_2016053115330515.pdf' directory
+#     When I want to upload file from '../../Data/PDF/IIM_2016053115330515.pdf' 'IIM_2016053115330515.pdf' directory
 #     And I stop file upload from notification panel
 #     And I restart file upload from notification panel
 #     And I click close all notifications button    

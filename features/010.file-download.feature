@@ -31,9 +31,9 @@ Scenario Outline: As a user I want to upload a Chemical files
     Then  I check that <filename> file is added
     Examples:
     | type | path         | filename|
-    | 'SDF'  | '../../../Data/SDF/HMDB-2-records.sdf' |'HMDB-2-records.sdf'|
-    | 'CSV'  | '../../../Data/CDX/125_11Mos.cdx' |'125_11Mos.cdx'|
-    | 'JPG'  | '../../../Data/Images/absurd.jpg' |'absurd.jpg'|
+    | 'SDF'  | '../../Data/SDF/HMDB-2-records.sdf' |'HMDB-2-records.sdf'|
+    | 'CSV'  | '../../Data/CDX/125_11Mos.cdx' |'125_11Mos.cdx'|
+    | 'JPG'  | '../../Data/Images/absurd.jpg' |'absurd.jpg'|
 
 Scenario: As a user I want to download file by using context toolbar menu
     Given for tile view I select 'HMDB-2-records.sdf' using CTRL

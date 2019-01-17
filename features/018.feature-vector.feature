@@ -9,7 +9,7 @@ Feature: As a user I want to use feature vector computation
 
     @fvc-smoke
     Scenario: I have a file to use for computation
-        When I want to upload file from '../../../Data/SDF/HMDB-2-records.sdf' 'HMDB-2-records.sdf' directory
+        When I want to upload file from '../../Data/SDF/HMDB-2-records.sdf' 'HMDB-2-records.sdf' directory
 
     Scenario: I want to set parameters for first Fingerprint
         Given I choose 'first' fingerprint type as 'Extended-Connectivity Fingerprints binary'

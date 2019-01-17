@@ -37,7 +37,7 @@ Feature: As a OSDR user I want to select multiple files or folders or both in ta
 
     Scenario: As a user I want to upload a file to folder
         Given I go to table folder 'DRAFTS/TEST_FOLDER_007'
-        When I want to upload file from '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' 'FocusSynthesis_InStock_071411_extra_short.csv' directory
+        When I want to upload file from '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' 'FocusSynthesis_InStock_071411_extra_short.csv' directory
         Then I check that 'FocusSynthesis_InStock_071411_extra_short.csv' file in table view is added   
     
     Scenario: As a  user I want to rename the folder

@@ -23,7 +23,7 @@ Feature: As a OSDR user I want to search for files/folders:
     #@smoke
     Scenario: As a user I want to upload a file to folder
         Given Delete file or folder 'FocusSynthesis_InStock_071411_extra_short' if it exist
-        When I want to upload file from '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' 'FocusSynthesis_InStock_071411_extra_short.csv' directory
+        When I want to upload file from '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' 'FocusSynthesis_InStock_071411_extra_short.csv' directory
         Then I check that 'FocusSynthesis_InStock_071411_extra_short.csv' file is added
    
     #@smoke

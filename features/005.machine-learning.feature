@@ -20,7 +20,7 @@ Feature: As a OSDR user I want to use ML functionality
 
   Scenario: As a user I want to upload a Chemical files
     Given I go to folder 'DRAFTS/TEST_ML_FILES'
-    When  I want to upload file from '../../../Data/SDF/test_sdf_file.sdf' 'test_sdf_file.sdf' directory
+    When  I want to upload file from '../../Data/SDF/test_sdf_file.sdf' 'test_sdf_file.sdf' directory
     Then  I am waiting for SDF to be uploaded
     And  I check that 'test_sdf_file.sdf' file is added
 

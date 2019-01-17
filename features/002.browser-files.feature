@@ -34,19 +34,19 @@ Feature: As an OSDR user I want to manage my files:
 
   # @smoke
   # Scenario: As a user I want to upload Chemical files
-  #   When I want to upload file from '../../../Data/MOL/1oir_canon.mol' '1oir_canon.mol' directory
+  #   When I want to upload file from '../../Data/MOL/1oir_canon.mol' '1oir_canon.mol' directory
 
   Scenario Outline: As a user I want to upload a Chemical files
     When I want to upload file from <path> <filename> directory
     Then I check that <filename> file is added
     Examples:
       | type  | path                                                              | filename                                        |
-      | 'MOL' | '../../../Data/MOL/1oir_canon.mol'                                | '1oir_canon.mol'                                |
-      | 'PDF' | '../../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
-      | 'SDF' | '../../../Data/SDF/HMDB-2-records.sdf'                            | 'HMDB-2-records.sdf'                            |
-      | 'CSV' | '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
-      | 'JPG' | '../../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
-      | 'GIF' | '../../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
+      | 'MOL' | '../../Data/MOL/1oir_canon.mol'                                | '1oir_canon.mol'                                |
+      | 'PDF' | '../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
+      | 'SDF' | '../../Data/SDF/HMDB-2-records.sdf'                            | 'HMDB-2-records.sdf'                            |
+      | 'CSV' | '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
+      | 'JPG' | '../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
+      | 'GIF' | '../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
 
   @smoke
   Scenario: As a user I want to open uploaded file
@@ -61,7 +61,7 @@ Feature: As an OSDR user I want to manage my files:
     Then I go to folder 'DRAFTS/TEST_FOLDER_002/TEST_FOLDER_002_1'
     Examples:
       | type  | path                               | filename         |
-      | 'MOL' | '../../../Data/MOL/1oir_canon.mol' | '1oir_canon.mol' |
+      | 'MOL' | '../../Data/MOL/1oir_canon.mol' | '1oir_canon.mol' |
 
   Scenario Outline: As a user I want to open uploaded file
     When I want to open file <filename>
@@ -69,10 +69,10 @@ Feature: As an OSDR user I want to manage my files:
     Then I go to folder 'DRAFTS/TEST_FOLDER_002/TEST_FOLDER_002_1'
     Examples:
       | type  | path                                                              | filename                                        |
-      | 'JPG' | '../../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
-      | 'GIF' | '../../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
-      | 'PDF' | '../../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
-      | 'CSV' | '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
+      | 'JPG' | '../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
+      | 'GIF' | '../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
+      | 'PDF' | '../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
+      | 'CSV' | '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
 
   @smoke
   Scenario: As a  user I want to delete a folder

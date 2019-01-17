@@ -20,7 +20,7 @@ Scenario: As a user I want to create a folder (and the new folder appears only o
 
 Scenario: As a user I want to upload new file
     Given Delete file or folder '125_11Mos.cdx' if it exist
-    When I want to upload file from '../../../Data/CDX/125_11Mos.cdx' '125_11Mos.cdx' directory
+    When I want to upload file from '../../Data/CDX/125_11Mos.cdx' '125_11Mos.cdx' directory
     And I check that '125_11Mos.cdx' file is added
 
 Scenario: As a user I want to export file using toolbar context menu

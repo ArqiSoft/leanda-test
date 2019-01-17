@@ -25,11 +25,11 @@ Scenario Outline: As a user I want to upload a Chemical files
   Then I check that <filename> file is added
   Examples:
     | type  | path                                                              | filename                                        |
-    | 'PDF' | '../../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
-    | 'SDF' | '../../../Data/SDF/HMDB-2-records.sdf'                            | 'HMDB-2-records.sdf'                            |
-    | 'CSV' | '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
-    | 'JPG' | '../../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
-    | 'GIF' | '../../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
+    | 'PDF' | '../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
+    | 'SDF' | '../../Data/SDF/HMDB-2-records.sdf'                            | 'HMDB-2-records.sdf'                            |
+    | 'CSV' | '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
+    | 'JPG' | '../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
+    | 'GIF' | '../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
 
 Scenario Outline: As a user I want to open uploaded file
   When I want to open file <filename>
@@ -37,14 +37,14 @@ Scenario Outline: As a user I want to open uploaded file
   Then I go to folder 'DRAFTS/TEST_FOLDER_PROD'
   Examples:
     | type  | path                                                              | filename                                        |
-    | 'JPG' | '../../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
-    | 'GIF' | '../../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
-    | 'PDF' | '../../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
-    | 'CSV' | '../../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
+    | 'JPG' | '../../Data/Images/absurd.jpg'                                 | 'absurd.jpg'                                    |
+    | 'GIF' | '../../Data/Images/optmedcut.gif'                              | 'optmedcut.gif'                                 |
+    | 'PDF' | '../../Data/PDF/DataScienceJournal-min.pdf'                    | 'DataScienceJournal-min.pdf'                    |
+    | 'CSV' | '../../Data/CSV/FocusSynthesis_InStock_071411_extra_short.csv' | 'FocusSynthesis_InStock_071411_extra_short.csv' |
 
 Scenario: As a user I want to upload new file
   Given Delete file or folder '1357_8Mos.cdx' if it exist
-  When I want to upload file from '../../../Data/CDX/1357_8Mos.cdx' '1357_8Mos.cdx' directory
+  When I want to upload file from '../../Data/CDX/1357_8Mos.cdx' '1357_8Mos.cdx' directory
   And I check that '1357_8Mos.cdx' file is added
 
 Scenario: As a user I want to export file using toolbar context menu

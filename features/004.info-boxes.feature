@@ -20,7 +20,7 @@ Scenario: As a user I want to navigate to browser
 
 Scenario: As a user I want to upload a file to folder       
     Given Delete file or folder '3d-chiral.mol' if it exist
-    When I want to upload file from '../../../Data/MOL/3d-chiral.mol' '3d-chiral.mol' directory
+    When I want to upload file from '../../Data/MOL/3d-chiral.mol' '3d-chiral.mol' directory
     Then I check that '3d-chiral.mol' file is added
 
 Scenario: As a user I want to open recrod in MOL file
