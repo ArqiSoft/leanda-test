@@ -16,7 +16,7 @@ export class RenameFolderPage {
 
     removeOldFolderName() {
         return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.renameFolderDialog = element(by.id('renameFolderModal'));
                 this.inputFolderName = this.renameFolderDialog.element(by.id('folder-name'));
                 return this.inputFolderName.clear();
@@ -26,7 +26,7 @@ export class RenameFolderPage {
     }
     setNewFolderName(newFolderName: string) {
         return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.renameFolderDialog = element(by.id('renameFolderModal'));
                 this.inputFolderName = this.renameFolderDialog.element(by.id('folder-name'));
                 return this.inputFolderName.sendKeys(newFolderName);
@@ -36,7 +36,7 @@ export class RenameFolderPage {
     }
     clickCancel() {
         return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.renameFolderDialog = element(by.id('renameFolderModal'));
                 this.cancelRenameButton = this.renameFolderDialog.all(by.buttonText('Cancel')).get(0);
                 return this.cancelRenameButton.click();
@@ -46,7 +46,7 @@ export class RenameFolderPage {
     }
     clickRenameFolder() {
         return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.renameFolderDialog = element(by.id('renameFolderModal'));
                 this.renameFolderButton = this.renameFolderDialog.element(by.buttonText('Rename'));
                 return this.renameFolderButton.click();

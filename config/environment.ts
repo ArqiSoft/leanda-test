@@ -32,6 +32,6 @@ export let environment = {
     interactiveTestPort: 6969,
 
     // A base URL for your application under test.
-    baseUrl: 'https://osdr.dev.dataledger.io'
+    baseUrl: 'https://osdr.dev.your-company.com'
     // baseUrl: 'http://localhost:5555'
 };

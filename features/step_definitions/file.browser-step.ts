@@ -129,7 +129,7 @@ Then(/I check that preview of file type '(.*)' exist/, { timeout: 30 * 1000 }, (
             selector = '.e2e-csv-preview';
         } else if (type === 'PDF') {
             // FIX FOR v0.14
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 selector = 'dr-pdf-file-view';
             } else {
                 // After v1.0 release replace rows 130 - 137 with row 136

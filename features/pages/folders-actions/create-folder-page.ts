@@ -21,7 +21,7 @@ export class CreateFolderPage {
     setFolderName(folderName: string) {
         // FIX FOR v0.14
         return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.createFolderDialog = element(by.id('createFolderModal'));
                 this.inputFolderName = this.createFolderDialog.element(by.id('folder-name'));
                 this.createFolderButton = this.createFolderDialog.element(by.buttonText('Create'));

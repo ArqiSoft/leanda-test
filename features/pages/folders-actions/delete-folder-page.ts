@@ -18,7 +18,7 @@ export class DeleteFolderPage {
 
     clickDeleteFolder() {
        return browser.driver.getCurrentUrl().then(url => {
-            if (url.includes('osdr.dataledger.io')) {
+            if (url.includes('osdr.your-company.com')) {
                 this.deleteFolderDialog = element(by.id('deleteFolderModal'));
                 this.deleteFolderButton = this.deleteFolderDialog.element(by.buttonText('Delete'));
                 return this.deleteFolderButton.click();
