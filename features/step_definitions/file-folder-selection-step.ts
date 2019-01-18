@@ -26,12 +26,13 @@ Given(/for tile view I select '(.*)' using CTRL/, (tileName: string, callback: C
                     if (!result) {
                         browser
                         .actions()
-                        .keyDown(protractor.Key.CONTROL)
+                        .keyDown(process.platform === 'darwin' ? protractor.Key.COMMAND : protractor.Key.CONTROL)
                         .mouseMove(item)
                         .click()
-                        .keyUp(protractor.Key.CONTROL)
+                        .keyUp(process.platform === 'darwin' ? protractor.Key.COMMAND : protractor.Key.CONTROL)
                         .perform().then(
                             () => {
+                                console.log(process.platform === 'darwin' ? 'COMMAND' : 'CONTROL');
                                 checkedItem.isPresent().then(
                                     () => {
                                         return callback();
@@ -61,7 +62,13 @@ Given(/for tile view I select '(.*)' using SHIFT/, (tileName: string, callback: 
         () => {
             expect(checkedItem.isPresent()).to.eventually.equal(false).then(
                 () => {
-                    browser.actions().keyDown(protractor.Key.SHIFT).mouseMove(item).click().keyUp(protractor.Key.SHIFT).perform().then(
+                    browser.actions()
+                    .keyDown(protractor.Key.SHIFT)
+                    .mouseMove(item)
+                    .click()
+                    .keyUp(protractor.Key.SHIFT)
+                    .perform()
+                    .then(
                         () => {
                             checkedItem.isPresent().then(
                                 () => {
@@ -92,7 +99,13 @@ Given(/for table view I select '(.*)' using CTRL/, (itemName: string, callback: 
         () => {
             expect(checkedItem.isPresent()).to.eventually.equal(false).then(
                 () => {
-                    browser.actions().keyDown(protractor.Key.CONTROL).mouseMove(item).click().keyUp(protractor.Key.CONTROL).perform().then(
+                    browser.actions()
+                    .keyDown(process.platform === 'darwin' ? protractor.Key.COMMAND : protractor.Key.CONTROL)
+                    .mouseMove(item)
+                    .click()
+                    .keyUp(process.platform === 'darwin' ? protractor.Key.COMMAND : protractor.Key.CONTROL)
+                    .perform()
+                    .then(
                         () => {
                             checkedItem.isPresent().then(
                                 () => {
