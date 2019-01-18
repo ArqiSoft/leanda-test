@@ -1,5 +1,5 @@
 @start-all-tests @003 @actions-with-folders @suite-1
-Feature: As an OSDR user I want to manage my folders:
+Feature: As an Leanda user I want to manage my folders:
 
   Scenario: I login in the application as a test user
     Given I go to the site

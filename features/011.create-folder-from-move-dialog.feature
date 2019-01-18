@@ -1,5 +1,5 @@
 @start-all-tests @011 @create-folder-from-move-dialog @suite-3
-Feature: As a OSDR user I want to create a folder from move dialog:
+Feature: As a Leanda user I want to create a folder from move dialog:
 
     Scenario: I login in the application as a test user
         Given I go to the site

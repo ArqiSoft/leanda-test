@@ -1,5 +1,5 @@
 @start-all-tests @004 @record-view-info-boxes-data @suite-1
-Feature: As a OSDR user I want to check if there any properties in file/record info-boxes:
+Feature: As a Leanda user I want to check if there any properties in file/record info-boxes:
 
 Scenario: I login in the application as a test user
     Given I go to the site

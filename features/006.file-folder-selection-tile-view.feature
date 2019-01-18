@@ -1,5 +1,5 @@
 @start-all-tests @006 @file-folder-actions-tile-view @suite-2
-Feature: As a OSDR user I want to select multiple files or folders or both in tile view:
+Feature: As a Leanda user I want to select multiple files or folders or both in tile view:
 
     Scenario: I login in the application as a test user
         Given I go to the site

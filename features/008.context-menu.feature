@@ -1,5 +1,5 @@
 @start-all-tests @008 @context-menu @suite-2 @unstable
-Feature: As a OSDR user I want to perform actions using context menu:
+Feature: As a Leanda user I want to perform actions using context menu:
 
 Scenario: I login in the application as a test user
     Given I go to the site

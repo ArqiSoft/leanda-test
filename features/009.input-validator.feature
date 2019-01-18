@@ -1,5 +1,5 @@
 @start-all-tests @009 @folder-file-input-field-validator @suite-3 @unstable
-Feature: As a OSDR user I want check if folder/file names are valid:
+Feature: As a Leanda user I want check if folder/file names are valid:
 
 Scenario: I login in the application as a test user
     Given I go to the site

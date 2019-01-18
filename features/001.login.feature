@@ -1,5 +1,5 @@
 @start-all-tests @001 @login-logout @suite-1 @smoke
-Feature: As a OSDR user I want to login to site and than logout
+Feature: As a Leanda user I want to login to site and than logout
 
 Scenario: I login in the application as a test user
   Given I go to the site

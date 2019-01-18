@@ -1,5 +1,5 @@
 @start-all-tests @010 @file-download @suite-3
-Feature: As a OSDR user I want to download files in different ways:
+Feature: As a Leanda user I want to download files in different ways:
 
 Scenario: I login in the application as a test user
     Given I go to the site

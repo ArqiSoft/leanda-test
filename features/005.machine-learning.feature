@@ -1,5 +1,5 @@
 @start-all-tests @005 @machine-learning @suite-2 @unstable
-Feature: As a OSDR user I want to use ML functionality
+Feature: As a Leanda user I want to use ML functionality
 
   Scenario: I login in the application as a test user
     Given I go to the site

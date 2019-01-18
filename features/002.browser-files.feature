@@ -1,5 +1,5 @@
 @start-all-tests @002 @actions-with-files @suite-1
-Feature: As an OSDR user I want to manage my files:
+Feature: As an Leanda user I want to manage my files:
 
   @smoke
   Scenario: I login in the application as a test user

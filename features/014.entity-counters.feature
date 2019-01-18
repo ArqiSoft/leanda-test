@@ -1,5 +1,5 @@
 @start-all-tests @014 @entity-counters  @suite-4
-Feature: As a OSDR user I want to check if counters are changed after processing files:
+Feature: As a Leanda user I want to check if counters are changed after processing files:
 
 Scenario: I login in the application as a test user
     Given I go to the site

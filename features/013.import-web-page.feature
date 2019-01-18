@@ -1,5 +1,5 @@
 @start-all-tests @013 @web-importer @suite-4 @unstable
-Feature: As an OSDR user I want to import web page:
+Feature: As an Leanda user I want to import web page:
 
   Scenario: I login in the application as a test user
     Given I go to the site

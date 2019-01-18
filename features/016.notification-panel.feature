@@ -1,5 +1,5 @@
 @start-all-tests @016 @notifications-and-panel  @suite-4
-Feature: As a OSDR user I want to see notifications and interact with them
+Feature: As a Leanda user I want to see notifications and interact with them
 
 Scenario: I login in the application as a test user
     Given I go to the site

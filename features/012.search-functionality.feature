@@ -1,11 +1,11 @@
 @start-all-tests @012 @search-functionality @unstable @suite-3
-Feature: As a OSDR user I want to search for files/folders:
+Feature: As a Leanda user I want to search for files/folders:
 
     Scenario: I login in the application as a test user
         Given I go to the site
         When go to login page
         When login as a test user
-        Then I should see 'Tester 1' on the Home page
+        # Then I should see 'Tester 1' on the Home page
 
     Scenario: As a user I want to navigate to browser
         When I click on Organize panel

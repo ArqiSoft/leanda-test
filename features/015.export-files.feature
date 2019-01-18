@@ -1,5 +1,5 @@
 @start-all-tests @015 @export-files  @suite-4
-Feature: As a OSDR user I want to export files
+Feature: As a Leanda user I want to export files
 
 Scenario: I login in the application as a test user
     Given I go to the site
