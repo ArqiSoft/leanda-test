@@ -1,6 +1,7 @@
 import { browser, by, element, protractor, $, ExpectedConditions } from 'protractor';
 import { CallbackStepDefinition } from 'cucumber';
 import { OrganizePage } from '../pages/opranize-page';
+import { environment } from '../../config/environment';
 const chai = require('chai').use(require('chai-as-promised'));
 const expect = chai.expect;
 
@@ -128,13 +129,7 @@ Then(/I check that preview of file type '(.*)' exist/, { timeout: 30 * 1000 }, (
         if (type === 'CSV') {
             selector = '.e2e-csv-preview';
         } else if (type === 'PDF') {
-            // FIX FOR v0.14
-            if (url.includes('osdr.your-company.com')) {
-                selector = 'dr-pdf-file-view';
-            } else {
-                // After v1.0 release replace rows 130 - 137 with row 136
-                selector = '.e2e-pdf-preview';
-            }
+            selector = '.e2e-pdf-preview';
         } else if (type === 'JPG' || type === 'GIF' || type === 'PNG') {
             selector = '.e2e-image-full-preview';
         }
